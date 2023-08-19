@@ -1,0 +1,21 @@
+// Given a number n we have to return an array containing integers from 1 to n.
+
+#include<bits/stdc++.h>
+using namespace std;
+#include<vector>
+#include<algorithm>
+
+void solve(vector<int>&answer, int x, int i){
+    if (i>x){
+        return;
+    }
+    answer.push_back(i);
+    i++;
+    solve(answer, x, i);
+}
+vector<int> printNos(int x) {
+    // Write Your Code Here
+    vector<int> answer;
+    solve(answer, x, 1);
+    return answer;
+}
