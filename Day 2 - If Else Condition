@@ -1,0 +1,14 @@
+//Write a function to return a number is greater than another number or not.
+
+string compareIfElse(int a, int b) {
+	// Write your code here
+	if(a>b){
+		return "greater";
+	}
+	else if(b>a){
+		return "smaller";
+	}
+	else{
+		return "equal";
+	}
+}
