@@ -1,0 +1,8 @@
+//Write a function to return sum of n natural numbers in O(1) time.
+
+int sumFirstN(int n) {
+    // Write Your Code Here
+    int sum=0;
+    sum = n*(n+1)/2;
+    return sum;
+}
