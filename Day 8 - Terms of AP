@@ -1,0 +1,20 @@
+// Write a function to return terms of an Arithmetic progression series such that none of the numbers of the series should be divisible by 4.
+
+#include <bits/stdc++.h> 
+#include <vector>
+
+vector < int > termsOfAP(int x) {
+    // Write your code here.
+    vector<int> answer;
+    int n = 1;
+    int i=1;
+    while(n<=x){
+        int sum = 3*i+2;
+        if(sum%4!=0){
+            answer.push_back(sum);
+            n++;
+        }
+        i++;
+    }
+    return answer;
+}
