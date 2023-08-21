@@ -1,0 +1,18 @@
+// Write a function which return the name of the student and average marks scored by the student in the 3 subjects in format of pair<char,int>.
+
+#include <bits/stdc++.h> 
+#include <utility>
+
+pair<char, int> averageMarks(char firstLetterOfName, int m1, int m2, int m3) {
+    // Write your code here.
+    int average;
+    average = (m1+m2+m3)/3;
+    pair<char, int> ans;
+ 
+    // first part of the pair
+    ans.first = firstLetterOfName;
+    // second part of the pair
+    ans.second = average;
+
+    return ans;
+}
