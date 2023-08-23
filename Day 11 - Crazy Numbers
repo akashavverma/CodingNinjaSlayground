@@ -1,0 +1,22 @@
+//given a number n you have to print numbers from 1 to 9 such that the respective line number has exactly that much numbers
+in increasing sequence for n rows.
+
+#include <bits/stdc++.h> 
+vector < vector < int > > numberPattern(int n) {
+
+  // Write your code here
+  vector<vector<int>> ans(n,vector<int>(n,-1));
+  int z=1;
+      for(int i=0;i<n;i++){
+        for(int j=n-i-1;j<n;j++){
+          ans[i][j]=z;
+          if (z == 9) {
+            z = 0;
+          }
+          z++;
+          
+        }
+      }
+
+      return ans;
+}
