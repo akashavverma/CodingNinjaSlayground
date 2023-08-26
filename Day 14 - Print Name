@@ -1,0 +1,11 @@
+// write a function to print name 5 times using while loop.
+
+#include <bits/stdc++.h> 
+void printName(string s){
+    // Write your code here.
+    int i=5;
+    while(i>0){
+        cout<<s<<endl;
+        i--;
+    }
+}
