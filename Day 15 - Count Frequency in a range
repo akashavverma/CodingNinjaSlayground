@@ -1,0 +1,11 @@
+// Given an array of length containing values from range 1 to x return the frequency of all elements from 1 to n.
+
+vector<int> countFrequency(int n, int x, vector<int> &nums){
+    // Write your code here.
+    vector<int>ans(n,0);
+   
+    for(int i=0;i<n;i++){
+      ans[nums[i]-1]++;
+    }
+    return ans;
+}
