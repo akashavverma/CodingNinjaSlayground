@@ -1,0 +1,10 @@
+// given an array find the largest element in the array.
+
+#include <bits/stdc++.h> 
+#include<algorithm>
+int largestElement(vector<int> &arr, int n) {
+    // Write your code here.
+    sort(arr.begin(),arr.end(),greater<int>());
+    int ans = arr[0];
+    return ans;
+}
