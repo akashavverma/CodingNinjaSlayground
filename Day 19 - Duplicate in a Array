@@ -1,0 +1,17 @@
+//given a array of size n containing numbers from 1 to n-1 contains a value which is twice in the array. Write a function to find the duplicate element.
+
+#include<algorithm>
+#include<vector>
+#include<bits/stdc++.h>
+
+int findDuplicate(vector<int> &arr) 
+{
+    // Write your code here
+    int n = arr.size();
+    int res = (n*(n-1))/2;
+    int sum=0;
+    for(int i:arr){
+        sum += i;
+    }
+    return sum-res;
+}
