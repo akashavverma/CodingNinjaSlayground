@@ -1,0 +1,10 @@
+// given an array you have to return the sum of maximum and minimum in minimum no of comparisons.
+
+#include <bits/stdc++.h> 
+#include<algorithm>
+int sumOfMaxMin(int arr[], int n){
+	// Write your code here.
+	sort(arr,arr+n);
+	int sum = arr[0]+arr[n-1];
+	return sum;
+}
