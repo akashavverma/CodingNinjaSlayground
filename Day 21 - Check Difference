@@ -1,0 +1,31 @@
+// given a array and a integer K we have to check whether there exist a pair i and j such that arr[i]-arr[j] == k given i is not equal to j. Return true if such a pair exist or return false.
+
+#include <bits/stdc++.h> 
+#include<algorithm>
+bool checkDiff(int *arr,int N,int K)
+{
+    // Write your code here.
+    sort(arr,arr+N);
+    int i =0;
+    int j=1;
+    int d = 0;
+    while(j<N){
+       
+                d = abs(arr[i]-arr[j]);
+                if(d==K){
+                    return true;
+                }
+                else if(d>K){
+                    i=i+1;
+                }
+                else{
+                    j = j +1;
+                }
+                
+                if(i==j){
+                    j=j+1;
+                }
+        
+    }
+    return false;
+}
